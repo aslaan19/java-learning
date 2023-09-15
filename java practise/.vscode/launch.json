@@ -4,6 +4,15 @@
 	// For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
 	"version": "0.2.0",
 	"configurations": [
+
+
+		{
+			"type": "java",
+			"name": "TestCards",
+			"request": "launch",
+			"mainClass": "badgay",
+			"projectName": "java practise_9ef85fd8"
+		},
 		{
 			"type": "java",
 			"name": "Current File",
@@ -14,8 +23,9 @@
 			"type": "java",
 			"name": "Badgay",
 			"request": "launch",
-			"mainClass": "Badgay",
-			"projectName": "java practise_9ef85fd8"
+			"mainClass": "TestCards",
+			"projectName": "java practise_9ef85fd8",
+			"vmArgs": "--module-path \"C:/Users/Abdullah Ayman/Downloads/openjfx-20.0.1_windows-x86_bin-sdk/javafx-sdk-20.0.1\" --add-modules javafx.controls,javafx.fxml"
 		}
 	]
 }
