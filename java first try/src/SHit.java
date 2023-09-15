@@ -5,7 +5,7 @@ public class SHit {
 		lista.addToTail(16);
 		lista.addToTail(20);
 		lista.addToTail(9);
-		lista.insertbefore(99,3);
+		lista.insertbefore(99,0);
 		System.out.println(lista);
 			
 		

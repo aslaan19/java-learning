@@ -129,18 +129,25 @@ public class SLL<T> {
     }
 
     // Please write the methods of Task02 here:
-    public void insertbefore(T element,int index) {
-        int count =0;
-        SLLNode<T> p= head;
-        SLL<T>.SLLNode<T> newnode= new SLLNode<T>(element);
-        while(count < index -1){
-            count++;
-            p=p.next; 
+    public void insertbefore(T element, int index) {
+        int count = 0;
+        SLLNode<T> p = head;
+        SLL<T>.SLLNode<T> newnode = new SLLNode<T>(element);
+        if (isEmpty()) {
+            head = tail = newnode;
         }
-        newnode.next = p.next;
-        p.next = newnode;
+        if (index == 0) {
+            newnode.next = head;
+            head = newnode;
 
-        
+        } else {
+            while (count < index - 1) {
+                count++;
+                p = p.next;
+            }
+            newnode.next = p.next;
+            p.next = newnode;
+        }
 
     }
 
