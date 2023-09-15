@@ -132,9 +132,14 @@ public class SLL<T> {
     public void insertbefore(T element,int index) {
         int count =0;
         SLLNode<T> p= head;
+        SLL<T>.SLLNode<T> newnode= new SLLNode<T>(element);
         while(count < index -1){
-            
+            count++;
+            p=p.next; 
         }
+        newnode.next = p.next;
+        p.next = newnode;
+
         
 
     }

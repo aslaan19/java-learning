@@ -5,8 +5,8 @@ public class SHit {
 		lista.addToTail(16);
 		lista.addToTail(20);
 		lista.addToTail(9);
-		int bom =lista.indexthree(2);
-		System.out.println(bom);
+		lista.insertbefore(99,3);
+		System.out.println(lista);
 			
 		
 	}
