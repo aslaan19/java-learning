@@ -181,7 +181,24 @@ public class SLL<T> {
             tail = null;
         }
     }
+    public void remover(T e){
+       SLLNode<T> wanted = new SLLNode<T>(e);
+       SLLNode<T> p = head;
+       while(p.next.info != wanted.info ){
+        p = p.next;
+       }
+       if(p.next == null) System.out.println("we dont have your E");
+
+       else{
+        p.next =p.next.next;
+        wanted.next = null;
+        p =p.next; 
+        
+       }
+    }
+
+        
+    }
 
 
 
-}
