@@ -5,8 +5,11 @@ public class SHit {
 		lista.addToTail(16);
 		lista.addToTail(20);
 		lista.addToTail(9);
-		lista.insertbefore(99,0);
 		System.out.println(lista);
+		lista.deleteLast();
+		System.out.println(lista);
+		/*System.out.println(lista.delete(2));
+		System.out.println("after deletion :"+lista);*/
 			
 		
 	}

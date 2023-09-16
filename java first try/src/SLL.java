@@ -37,7 +37,8 @@ public class SLL<T> {
 
     public void addToTail(T el) {
         if (!isEmpty()) {
-            tail.next = new SLLNode<T>(el);
+            SLLNode<T> newnode = new SLLNode<T>(el);
+            tail.next = newnode;
             tail = tail.next;
         } else
             head = tail = new SLLNode<T>(el);
@@ -132,7 +133,7 @@ public class SLL<T> {
     public void insertbefore(T element, int index) {
         int count = 0;
         SLLNode<T> p = head;
-        SLL<T>.SLLNode<T> newnode = new SLLNode<T>(element);
+        SLLNode<T> newnode = new SLLNode<T>(element);
         if (isEmpty()) {
             head = tail = newnode;
         }
@@ -150,5 +151,37 @@ public class SLL<T> {
         }
 
     }
+    public T delete(int index) {
+        SLLNode<T> p = head;
+        SLLNode<T> deleted= new SLLNode<>();
+        int count =0;
+        while(count < index-1 ){
+            count++;
+            p = p.next;
+        }
+        deleted = p.next ;
+        p.next = p.next.next;
+
+        return deleted.info;
+    }
+    public void deleteLast(){
+        SLLNode<T> D = head;
+        if (head==null){
+            System.out.println("the list is empty !");
+        }
+        if (head == tail){
+            head = tail = null;
+        }
+        else{
+            while(D.next!= tail){
+                D=D.next;
+            }
+            D.next = tail.next;
+            D=tail;
+            tail = null;
+        }
+    }
+
+
 
 }
