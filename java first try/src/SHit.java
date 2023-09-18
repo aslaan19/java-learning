@@ -11,7 +11,7 @@ public class SHit {
 		System.out.println(lista);
 		lista.Less3();
 		System.out.println(lista);
-		
+		System.out.println("SLee[p]");
 			
 		
 	}
