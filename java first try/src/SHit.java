@@ -5,11 +5,13 @@ public class SHit {
 		lista.addToTail(40);
 		lista.addToTail(55);
 		lista.addToTail(95);
+		lista.addToTail(512);
+		lista.addToTail(102);
+		lista.addToTail(94);
 		System.out.println(lista);
-		lista.remover(55);
+		lista.Less3();
 		System.out.println(lista);
-		/*System.out.println(lista.delete(2));
-		System.out.println("after deletion :"+lista);*/
+		
 			
 		
 	}

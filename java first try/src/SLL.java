@@ -197,6 +197,19 @@ public class SLL<T> {
        }
     }
 
+    public void Less3(){
+        SLLNode<T> p = head;
+        int count  = 0;
+        while(count <3){
+            count++;
+            p= p.next;
+        }
+        
+        p.next=null;
+        tail=p;
+        
+    }
+
         
     }
 
