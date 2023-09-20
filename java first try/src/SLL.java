@@ -209,6 +209,21 @@ public class SLL<T> {
         tail=p;
         
     }
+    public void BOom(T element,T element2){
+        SLLNode<T> p = head;
+        SLLNode<T> newnode = new SLLNode<T>(element);
+        SLLNode<T> newnode2 = new SLLNode<T>(element2);
+
+        while(p.next != null){
+            p= p.next;
+        }
+        p.next= newnode ;
+        p= p.next;
+        p.next= newnode2 ;
+        p= p.next;
+        
+
+    }
 
         
     }
