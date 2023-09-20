@@ -11,6 +11,7 @@ public class SHit {
 		System.out.println(lista);
 		lista.BOom(69, 92);
 		System.out.println(lista);
+		System.out.println("not prof12");
 		
 			
 		
