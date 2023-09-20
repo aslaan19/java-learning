@@ -9,7 +9,7 @@ public class SHit {
 		lista.addToTail(102);
 		lista.addToTail(94);
 		System.out.println(lista);
-		lista.BOom(69, 96);
+		lista.BOom(69, 92);
 		System.out.println(lista);
 		
 			
