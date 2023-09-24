@@ -1,19 +1,11 @@
 public class SHit {
 	public static <T> void main(String[] args) {
 		SLL<Integer> lista = new SLL<Integer>();
-		lista.addToTail(15);
-		lista.addToTail(40);
-		lista.addToTail(55);
-		lista.addToTail(95);
-		lista.addToTail(512);
-		lista.addToTail(102);
-		lista.addToTail(94);
-		System.out.println(lista);
-		lista.BOom(69, 92);
-		System.out.println(lista);
-		System.out.println("not prof12");
 		
-			
-		
+		//System.out.println(randomNum);
+		for(int i =0; i<11;i++){
+		int randomNum = (int) (Math.random()*6)+1;
+			System.out.println(randomNum);
+		}
 	}
 }
